@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="icon" type="image/png" href="image/favicon.ico">
+		<title>Time's Up</title>	    
+        <link type="text/css" rel="stylesheet" href="./renxi/default.css">
+		<script type="text/javascript" src="./renxi/jquery.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-parser.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-jit.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-builderbase.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async-powerpack.min.js"></script>
+		<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
+	    <style type="text/css">
+<!--
+.STYLE1 {color: #666666}
+-->
+        </style>
+</head>
+    <body>
+        <div id="main">
+            <div id="error">Miracle use <a href="http://www.google.cn/chrome">Chrome</a>) and (<a href="http://firefox.com/download/">Firefox</a> instead )</div>
+             <div id="wrap">
+                <div id="text">
+			        <div id="code">
+			      <font color="#0000FF"><span class="say">___</span><br>
+						<span class="say">Đôi khi có những điều mà đối diện không thể nói như viết ở đây những điều diễn tả cảm xúc của mình. Vài năm gần đây Th đã quen dần với việc sáng thì đi làm, chiều thì tập thể dục, khuya thì về nghĩ và cứ nghĩ cuộc sống đơn giản vậy thôi. Nhưng từ khi gặp Tr có một sức hấp dẫn vô hình trong Th cứ muốn dõi theo Tr từng ngày. Và đó là lúc số lượng suy nghĩ về Tr cứ tăng dần vì những thứ xung quanh, và cũng chính khoảng thời gian ấy Th nhận ra nhiều điều mới hơn của mọi thứ hàng ngày. </span><br>
+						<span class="say">Rất may mắn là Th tìm được instagram của Tr và không biết đã đắm chìm bao nhiêu thời gian ở nơi đó nơi mà những điều bình thường lại ngập tràn sắc màu </span><br>
+            <span class="say">-  màu của nổi sợ, sợ mất những người mình yêu thương, sợ chính cảm xúc của mình, sợ những lúc muốn làm việc gì đó nhưng không thể  - tự hỏi tại sao mình lại có những giây phút yếu lòng đến vậy </span><br>
+						<span class="say">-  màu của niềm vui, vui với những khoảnh khắc đẹp, vui với những thứ mình yêu thích - đó là lúc Th tự hỏi chỉ có vui thì hay biết mấy nhưng làm sao để vui tồn tại mà không có buồn :/ </span><br>
+						<span class="say">- màu của hi vọng,  hi vọng về hạnh phúc chỉ có thể tạo ra bởi chính mình, hi vọng mọi thứ sẽ tốt đẹp hơn và được trông chờ ^^!.</span><br>
+						<span class="say">Gần đây Th cảm nhận Tr đang có nhiều tâm trạng - có thể là vì 1 vài lý do mà Tr đã từng chia sẽ. Nhưng có thể còn nhiều thứ khác. Nhưng nếu có liên quan đến khía cạnh cuộc sống và tình cảm Th chỉ mong Tr sẽ tìm được những điều mà mình cần (như film The Soul ^^!) Gặp được người trong mộng (người Tr chọn, người có thể bên Tr, quan tâm, chăm sóc giúp Tr tìm thấy Hạnh Phúc, Bình An ) và quan trọng nhất phải giữ được Tr luôn khoẻ mạnh ^^!. PHẢI THẬT KHOẺ MẠNH.</span><br>
+						<span class="say">Cám ơn Tr đã xuất hiện, để Th biết tim mình còn đập dữ dội và tràn đầy sức sống như vậy. Wish all your wishes come true. Hope this gift just only give you peace and happiness along with confidence in your life</span><br>
+                        <span class="say"><span class="space"></span>^^</span>
+			  </font></p>
+      </div>
+                </div>
+                <div id="clock-box">
+                    <span class="STYLE1"></span><font color="#FF0000">* Love is what you think every day*</font>
+[><span class="STYLE1"> Time stand </span><]
+                  <div id="clock"></div>
+              </div>
+                <canvas id="canvas" width="1100" height="680"></canvas>
+            </div>
+            
+        </div>
+    
+    <script>
+    </script>
+
+    <script>
+    (function(){
+        var canvas = $('#canvas');
+		
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;        }
+
+        var width = canvas.width();
+        var height = canvas.height();        
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]] 
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
+        }
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function(e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0; 
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+            }
+        }).mousemove(function(e){
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.css("background", "#ffe");
+            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {		
+		    var together = new Date("May 21, 2016 0:0:1").getTime();	
+			
+		    $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+            $await(moveAnimate());
+
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+    })();
+    </script>
+		<audio autoplay>
+			<source src="music/LovingYou2.mp3" type="audio/mpeg" />
+		</audio>
+		<audio controls>
+			<source src="music/LovingYou2.mp3" type="audio/mpeg" />
+		</audio>
+		<!--<audio autoplay>-->
+			<!--<source src="music/AsLongAsYouLoveMe.mp3" type="audio/mpeg" />-->
+		<!--</audio>  -->
+</body>
+</html>
