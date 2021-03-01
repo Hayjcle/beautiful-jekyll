@@ -1,16 +1,17 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: What would you do if you wasn’t afraid?
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Inu HaYiCle. I have the following qualities:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I talk with computer ^^! . Ha
+- I work-out in the street :P . Yi 
+- And I use finger to sing =]]~ . Cle
 
-What else do you need?
+... 
 
 ### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+FREE TO PLAY [my movie](https://www.youtube.com/watch?v=7on9ssVCJPY) .
