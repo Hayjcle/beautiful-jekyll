@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Love the way you live
+title: HaYiCle
 
 # Short description of your site
 description: The one who gains something is the fool who keeps moving forward !
@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "https://avatars3.githubusercontent.com/u/19665431?s=400&u=6149eb224f06fa4152d1fa475183db925f2bf544&v=4"
+avatar: "https://images6.alphacoders.com/658/658688.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
