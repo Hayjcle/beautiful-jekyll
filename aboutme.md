@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: What would you do if you wasn’t afraid?
+subtitle: What would you do if you weren’t afraid?
 ---
 
 My name is Inu HaYiCle. I have the following qualities:
